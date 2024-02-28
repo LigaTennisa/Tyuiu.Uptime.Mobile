@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp2"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutWidth="180"
+    Shell.TabBarIsVisible="False"
+    Shell.ForegroundColor="#F4A85E">
+
+
+
+    <FlyoutItem Title="Titles" FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+            Title="Главная страница"
+            ContentTemplate="{DataTemplate local:Menu}"
+            Route="Menu"
+            Shell.BackgroundColor="#292830"/>
+        <ShellContent
+            Title="Профиль"
+            ContentTemplate="{DataTemplate local:Authorization}"
+            Route="Authorization"
+            Shell.BackgroundColor="#292830"/>
+        <ShellContent
+            Title="Форум"
+            ContentTemplate="{DataTemplate local:Help}"
+            Route="Help" 
+            Shell.BackgroundColor="#292830"/>
+        <ShellContent
+            Title="Соревнования"
+            ContentTemplate="{DataTemplate local:TennisLeague}"
+            Route="TennisLeague" 
+            Shell.BackgroundColor="#292830"/>
+        <ShellContent
+            Title="Новости"
+            ContentTemplate="{DataTemplate local:News}"
+            Route="News" 
+            Shell.BackgroundColor="#292830"/>
+        <ShellContent
+            Title="Тренировки"
+            ContentTemplate="{DataTemplate local:Coaches}"
+            Route="Coaches" 
+            Shell.BackgroundColor="#292830"/>
+        <ShellContent
+            Title="О нас"
+            ContentTemplate="{DataTemplate local:AboutUs}"
+            Route="AboutUs" 
+            Shell.BackgroundColor="#292830"/>
+    </FlyoutItem>
+</Shell>

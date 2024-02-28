@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.News"
+             Title="News">
+
+    <Shell.TitleView>
+        <HorizontalStackLayout VerticalOptions="Center">
+            <Label
+            Text="Новости"
+    TextColor="White"
+    VerticalTextAlignment="Center"
+    VerticalOptions="Center"
+    FontFamily="bowler"
+    HeightRequest="50"
+    FontSize="Title" />
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    
+    <VerticalStackLayout>
+        <Image 
+            Source="greenbox.png"
+            HeightRequest="50" AnchorY="0" Scale="1" ScaleY="0.09" ScaleX="15" Margin="0,0,0,-40"/>
+        <Label 
+            Text="•	Интересные статьи об игре в теннис, звездах мирового тенниса и тренды индустрии.&#10;
+•	Аналитика и обзоры событий в мире тенниса.&#10;
+•	Раздел с новостями о теннисе в различных странах и клубах.&#10;
+"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="20" />
+    </VerticalStackLayout>
+</ContentPage>

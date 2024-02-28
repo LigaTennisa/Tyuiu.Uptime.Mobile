@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Pages.Registration"
+             Title="Registration">
+    <Shell.TitleView>
+        <HorizontalStackLayout VerticalOptions="Center">
+            <Label
+            Text="Регистрация"
+            TextColor="White"
+            VerticalTextAlignment="Center"
+            VerticalOptions="Center"
+            FontFamily="bowler"
+            HeightRequest="50"
+            FontSize="20" />
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+
+    <VerticalStackLayout>
+        <Entry Placeholder = "Введите Email" FontFamily="Helvetica"
+            FontSize="22" MaxLength ="20" />
+        <Entry Placeholder = "Логин" FontFamily="Helvetica"
+            FontSize="22" MaxLength ="20" />
+        <Entry Placeholder = "Пароль" FontFamily="Helvetica"
+            FontSize="22" MaxLength ="20" />
+        <Entry Placeholder = "Потдверждение пароля" FontFamily="Helvetica"
+            FontSize="22" MaxLength ="20" />
+
+        <Entry Placeholder = "Проверка" FontFamily="Helvetica"
+            FontSize="22" MaxLength ="20" />
+        
+        <Button
+       x:Name="CounterB"
+       Text="Редактировать" 
+       TextColor="Black"
+       SemanticProperties.Hint="Log in"
+       Clicked="Registred"
+       HorizontalOptions="Fill" BackgroundColor="#F4A85E"/>
+    </VerticalStackLayout>
+    
+    
+</ContentPage>

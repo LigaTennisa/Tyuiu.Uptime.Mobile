@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.AboutUs"
+             Title="Команда проекта">
+    <Shell.TitleView>
+        <HorizontalStackLayout VerticalOptions="Fill">
+            <Label
+                Text="Информация"
+                TextColor="White"
+                VerticalTextAlignment="Center"
+                VerticalOptions="Center"
+                HeightRequest="50"
+                FontSize="20" FontFamily="bowler"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    
+    <VerticalStackLayout>
+        <Image 
+            Source="greenbox.png"
+            HeightRequest="50" AnchorY="0" Scale="1" ScaleY="0.09" ScaleX="15" Margin="0,0,0,-40"/>
+        
+        <Label 
+            Text="•	Контактная информация для связи с администрацией сайта.&#10;
+•Информация о местах для игры в теннис, аренда кортов и клубов. &#10;
+•	Полезные ссылки и партнеры сайта."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="20" />
+    </VerticalStackLayout>
+</ContentPage>

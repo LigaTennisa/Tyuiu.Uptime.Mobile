@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Authorization"
+             Title="Аккаунт">
+    <Shell.TitleView>
+        <HorizontalStackLayout VerticalOptions="Center">
+            <Label
+                Text="Профиль"
+                TextColor="White"
+                VerticalTextAlignment="Center"
+                VerticalOptions="Center"
+                FontFamily="bowler"
+                HeightRequest="50"
+                FontSize="Title" />
+        </HorizontalStackLayout>
+        
+    </Shell.TitleView>
+    <VerticalStackLayout Padding="30,0" Spacing="2">
+        <Image 
+            Source="greenbox.png"
+            HeightRequest="50" AnchorY="0" Scale="1" ScaleY="0.09" ScaleX="15" Margin="0,0,0,-40"/>
+        <Button
+           x:Name="ButtonLogin"
+           Text="Вход" 
+           TextColor="Black"
+           SemanticProperties.Hint="Log in"
+           Clicked="ToLogIn"
+           HorizontalOptions="Fill" BackgroundColor="#F4A85E"/>
+        <Button
+            x:Name="ButtonReg"
+            BackgroundColor="Transparent"
+            Text="Регистрация" 
+            TextColor="Black"
+            SemanticProperties.Hint="Registration"
+            Clicked="ToReg"
+            HorizontalOptions="Fill" BorderWidth="1.5" BorderColor="#000000"/>
+    </VerticalStackLayout>
+</ContentPage>

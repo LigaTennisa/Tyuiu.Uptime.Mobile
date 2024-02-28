@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Menu">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="50,0"
+            Spacing="20">
+
+            <Image 
+            Source="greenbox.png"
+            HeightRequest="50" AnchorY="0" Scale="1" ScaleY="0.09" ScaleX="15" Margin="0,0,0,-40"/>
+
+            <Label
+                Text="•	Приветствие и описание сайта.&#10;
+•	Следующая игра и ссылка на сайт с покупкой билетов.&#10;
+•	Быстрый доступ к основным разделам сайта.&#10;
+•	Последние новости и актуальные события в мире тенниса.&#10;
+"
+                SemanticProperties.HeadingLevel="Level2" FontSize="20" />
+            <Button 
+                CornerRadius="30"
+                BackgroundColor="#292830" Text="Профиль" Margin="0,0,0,35"
+                Clicked="ToAccount">
+            </Button>
+
+            <Button 
+               CornerRadius="30"
+               BackgroundColor="#292830" Text="Соревнования" Margin="0,0,0,35"
+               Clicked="ToTournaments">
+            </Button>
+
+            <Button 
+               CornerRadius="30"
+               BackgroundColor="#292830" Text="Тренировки" Margin="0,0,0,35"
+               Clicked="ToTrainings">
+            </Button>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    <Shell.TitleView>
+    <HorizontalStackLayout VerticalOptions="Fill">
+        <Label
+                    Text="   Главная страница"
+                     TextColor="White"
+                    FontFamily="bowler"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    FontSize="20" />
+    </HorizontalStackLayout>
+    </Shell.TitleView>
+
+</ContentPage>
