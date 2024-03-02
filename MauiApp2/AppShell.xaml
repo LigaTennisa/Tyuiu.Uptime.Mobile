@@ -18,8 +18,14 @@
             ContentTemplate="{DataTemplate local:Menu}"
             Route="Menu"
             Shell.BackgroundColor="#292830"/>
+        <ShellContent 
+            Title="Профиль" 
+            ContentTemplate="{DataTemplate local:Profile}" 
+            Route="Profile" 
+            Shell.BackgroundColor="#292830">
+        </ShellContent> 
         <ShellContent
-            Title="Профиль"
+            Title="Вход"
             ContentTemplate="{DataTemplate local:Authorization}"
             Route="Authorization"
             Shell.BackgroundColor="#292830"/>

@@ -17,16 +17,16 @@
     </Shell.TitleView>
 
     <VerticalStackLayout>
-        <Entry Placeholder = "Введите Email" FontFamily="Helvetica"
+        <Entry x:Name="Mail" Placeholder = "Введите Email" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
-        <Entry Placeholder = "Логин" FontFamily="Helvetica"
+        <Entry x:Name="Login" Placeholder = "Логин" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
-        <Entry Placeholder = "Пароль" FontFamily="Helvetica"
+        <Entry x:Name="Pass" Placeholder = "Пароль" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
-        <Entry Placeholder = "Потдверждение пароля" FontFamily="Helvetica"
+        <Entry x:Name="PassMore" Placeholder = "Потдверждение пароля" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
 
-        <Entry Placeholder = "Проверка" FontFamily="Helvetica"
+        <Entry x:Name="Prove" Placeholder = "Проверка" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
         
         <Button

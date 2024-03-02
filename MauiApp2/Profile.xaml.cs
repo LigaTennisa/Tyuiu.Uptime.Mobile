@@ -1,4 +1,4 @@
-namespace MauiApp2.Pages;
+namespace MauiApp2;
 
 public partial class Profile : ContentPage
 {

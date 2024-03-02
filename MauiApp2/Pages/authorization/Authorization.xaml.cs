@@ -7,9 +7,10 @@ public partial class Authorization : ContentPage
 		InitializeComponent();
 	}
 
+
     private async void ToLogIn(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("Login");
+        await Shell.Current.GoToAsync("LogIn");
     }
     private async void ToReg(object sender, EventArgs e)
     {

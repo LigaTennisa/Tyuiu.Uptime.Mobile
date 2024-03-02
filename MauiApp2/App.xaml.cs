@@ -10,7 +10,7 @@ namespace MauiApp2
             Routing.RegisterRoute("TennisLeague", typeof(TennisLeague));
             Routing.RegisterRoute("Coaches", typeof(Coaches));
             Routing.RegisterRoute("Authorization", typeof(Authorization));
-            Routing.RegisterRoute("Login", typeof(Login));
+            Routing.RegisterRoute("LogIn", typeof(LogIn));
             Routing.RegisterRoute("Registration", typeof(Registration));
             MainPage = new AppShell();
         }

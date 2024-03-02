@@ -83,22 +83,19 @@
 	  <Compile Update="Pages\forum\Help.xaml.cs">
 	    <DependentUpon>Help.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Pages\Login.xaml.cs">
-	    <DependentUpon>Login.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="Pages\mainpage\Menu.xaml.cs">
 	    <DependentUpon>Menu.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\Login.xaml">
+	  <MauiXaml Update="Pages\Login_Registration\LogIn.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Profile.xaml">
+	  <MauiXaml Update="Profile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Registration.xaml">
+	  <MauiXaml Update="Registration.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\trainings\Coaches.xaml">

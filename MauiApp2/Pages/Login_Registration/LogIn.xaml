@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp2.Pages.Login"
-             Title="Login">
+             x:Class="MauiApp2.Pages.LogIn"
+             Title="LogIn">
 
     <Shell.TitleView>
         <HorizontalStackLayout VerticalOptions="Center">
@@ -18,16 +18,18 @@
     </Shell.TitleView>
 
     <VerticalStackLayout>
-        <Entry Placeholder = "Логин" FontFamily="Helvetica"
+        <Entry x:Name="gin" Placeholder = "Логин" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
-        <Entry Placeholder = "Пароль" FontFamily="Helvetica"
+        <Entry x:Name="Pass" Placeholder = "Пароль" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" IsPassword="True" Margin="0" InputTransparent="False" />
+        <Entry x:Name="Prove" Placeholder = "Проверка" FontFamily="Helvetica"
+            FontSize="22" MaxLength ="20" />
         <Button
        x:Name="CounterB"
        Text="Войти" 
        TextColor="Black"
        SemanticProperties.Hint="Log in"
-       Clicked="OnCounterClicked"
+       Clicked="Logged"
        HorizontalOptions="Fill" BackgroundColor="#F4A85E"/>
     </VerticalStackLayout>
 </ContentPage>
