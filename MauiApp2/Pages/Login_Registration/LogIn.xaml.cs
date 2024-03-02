@@ -10,13 +10,14 @@ public partial class LogIn : ContentPage
         InitializeComponent();
     }
     User user = new User();
-    private void Logged(object sender, EventArgs e)
+    private async void Logged(object sender, EventArgs e)
     {
         if ((Pass.Text != null && gin.Text != null) || (Pass.Text == user.Password) && (gin.Text == user.Name))
         {
-            var page = new Profile();
-            page.IsVisible = true;
-            Navigation.PushAsync(new Profile());
+            //var page = new Profile();
+            //page.IsVisible = true;
+            await Shell.Current.GoToAsync("//Profile");
+            //Navigation.PushAsync(new Profile());
         }
         else
         {

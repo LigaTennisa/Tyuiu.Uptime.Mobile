@@ -4,36 +4,37 @@
              x:Class="MauiApp2.Authorization"
              Title="Аккаунт">
     <Shell.TitleView>
-        <HorizontalStackLayout VerticalOptions="Center">
+        <VerticalStackLayout>
             <Label
-                Text="Профиль"
+                Text="АВТОРИЗАЦИЯ"
                 TextColor="White"
                 VerticalTextAlignment="Center"
-                VerticalOptions="Center"
                 FontFamily="bowler"
                 HeightRequest="50"
-                FontSize="Title" />
-        </HorizontalStackLayout>
-        
+                FontSize="Title"/>
+        </VerticalStackLayout>
     </Shell.TitleView>
-    <VerticalStackLayout Padding="30,0" Spacing="2">
+
+    <VerticalStackLayout Padding="0" Spacing="7" MaximumWidthRequest="200" VerticalOptions="Center">
         <Image 
-            Source="greenbox.png"
-            HeightRequest="50" AnchorY="0" Scale="1" ScaleY="0.09" ScaleX="15" Margin="0,0,0,-40"/>
+           Source="greenbox.png" VerticalOptions="Start"
+           HeightRequest="50" AnchorY="-6.75" Scale="1" ScaleY="0.12" ScaleX="15"/>
         <Button
            x:Name="ButtonLogin"
-           Text="Вход" 
+           Text="Вход"
            TextColor="Black"
            SemanticProperties.Hint="Log in"
            Clicked="ToLogIn"
-           HorizontalOptions="Fill" BackgroundColor="#F4A85E"/>
+           BackgroundColor="#EF9944" BorderColor="#000000" BorderWidth="1.5"
+           FontSize="Subtitle"/>
+
         <Button
             x:Name="ButtonReg"
-            BackgroundColor="Transparent"
+            BackgroundColor="#FFFFFF"
             Text="Регистрация" 
             TextColor="Black"
             SemanticProperties.Hint="Registration"
             Clicked="ToReg"
-            HorizontalOptions="Fill" BorderWidth="1.5" BorderColor="#000000"/>
+            BorderWidth="1.5" BorderColor="#000000" FontSize="Subtitle"/>
     </VerticalStackLayout>
 </ContentPage>

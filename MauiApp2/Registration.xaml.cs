@@ -15,7 +15,8 @@ public partial class Registration : ContentPage
             user.Password = Pass.Text;
             user.Email = Mail.Text;
             user.Name = Login.Text;
-            Navigation.PushAsync(new Profile(), true);
+            Shell.Current.GoToAsync("//Profile");
+            //Navigation.PushAsync(new Profile(), true);
             var page = new Registration();
             page.IsVisible = false;
             page.IsEnabled = false;
@@ -26,4 +27,14 @@ public partial class Registration : ContentPage
             DisplayAlert("Ошибка", "Неверные данные", "ОК");
         }
     }
+
+    //private void Registred(object sender, EventArgs e)
+    //{
+
+    //}
+
+    //private void Registred(object sender, EventArgs e)
+    //{
+
+    //}
 }

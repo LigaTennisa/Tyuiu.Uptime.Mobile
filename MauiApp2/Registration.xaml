@@ -16,7 +16,7 @@
         </HorizontalStackLayout>
     </Shell.TitleView>
 
-    <VerticalStackLayout>
+    <VerticalStackLayout MaximumWidthRequest="300" VerticalOptions="Center" Padding="7">
         <Entry x:Name="Mail" Placeholder = "Введите Email" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
         <Entry x:Name="Login" Placeholder = "Логин" FontFamily="Helvetica"
@@ -26,17 +26,15 @@
         <Entry x:Name="PassMore" Placeholder = "Потдверждение пароля" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
 
-        <Entry x:Name="Prove" Placeholder = "Проверка" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
-        
         <Button
        x:Name="CounterB"
-       Text="Редактировать" 
+       Text="Регистрация"
        TextColor="Black"
        SemanticProperties.Hint="Log in"
        Clicked="Registred"
-       HorizontalOptions="Fill" BackgroundColor="#F4A85E"/>
+       HorizontalOptions="Fill" BackgroundColor="#EF9944" BorderColor="#000000" BorderWidth="1.5"/>
+
     </VerticalStackLayout>
-    
-    
+
+
 </ContentPage>

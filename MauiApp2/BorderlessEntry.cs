@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace MauiApp2
 {
-    public class User
+    class BorderlessEntry : Entry
     {
-        public string Name { get; set; }
-        public string Password;
-        public string Email;
+        public BorderlessEntry()
+        {
+
+        }
     }
 }
