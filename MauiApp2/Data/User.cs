@@ -9,7 +9,9 @@ namespace MauiApp2
     public class User
     {
         public string Name { get; set; }
-        public string Password;
-        public string Email;
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public string oneName { get; set; }
+        public string twoName { get; set; }
     }
 }

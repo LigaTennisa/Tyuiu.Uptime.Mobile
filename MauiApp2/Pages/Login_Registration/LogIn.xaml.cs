@@ -1,23 +1,32 @@
 //using Android.App;
 
+using MauiApp2.Data;
+
 namespace MauiApp2.Pages;
 
 public partial class LogIn : ContentPage
 {
-    //public string[,] masssive = new string[1, 3];
+    //private readonly IData data;
     public LogIn()
     {
         InitializeComponent();
+        //this.data = new FakeData();
+        //BindingContext = this.data;
     }
-    User user = new User();
+    
     private async void Logged(object sender, EventArgs e)
     {
-        if ((Pass.Text != null && gin.Text != null) || (Pass.Text == user.Password) && (gin.Text == user.Name))
+        //User user = new User { 
+        //    Name = gin.Text, 
+        //    oneName = "New", 
+        //    twoName = "User", 
+        //    Email = "NewUser@yourdomain.com", 
+        //    Password = Pass.Text };
+        if ((Pass.Text != null && gin.Text != null))
         {
-            //var page = new Profile();
-            //page.IsVisible = true;
+            //this.data.Users.Add(user);
+            //bool a = this.data.Users.Contains(user);
             await Shell.Current.GoToAsync("//Profile");
-            //Navigation.PushAsync(new Profile());
         }
         else
         {

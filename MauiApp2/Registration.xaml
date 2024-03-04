@@ -21,6 +21,10 @@
             FontSize="22" MaxLength ="20" />
         <Entry x:Name="Login" Placeholder = "Логин" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
+        <Entry x:Name="oneName" Placeholder = "Имя" FontFamily="Helvetica"
+            FontSize="22" MaxLength ="20" />
+        <Entry x:Name="twoName" Placeholder = "Фамилия" FontFamily="Helvetica"
+            FontSize="22" MaxLength ="20" />
         <Entry x:Name="Pass" Placeholder = "Пароль" FontFamily="Helvetica"
             FontSize="22" MaxLength ="20" />
         <Entry x:Name="PassMore" Placeholder = "Потдверждение пароля" FontFamily="Helvetica"

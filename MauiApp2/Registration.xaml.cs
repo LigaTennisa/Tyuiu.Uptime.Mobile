@@ -11,6 +11,7 @@ public partial class Registration : ContentPage
     {
         if ((Pass.Text == PassMore.Text) && Pass.Text != null && Mail.Text != null && Login.Text != null)
         {
+            
             User user = new User();
             user.Password = Pass.Text;
             user.Email = Mail.Text;
@@ -18,8 +19,7 @@ public partial class Registration : ContentPage
             Shell.Current.GoToAsync("//Profile");
             //Navigation.PushAsync(new Profile(), true);
             var page = new Registration();
-            page.IsVisible = false;
-            page.IsEnabled = false;
+            //page.IsVisible = false;
 
         }
         else
