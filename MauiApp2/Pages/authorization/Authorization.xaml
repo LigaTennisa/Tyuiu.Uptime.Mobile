@@ -9,16 +9,14 @@
                 Text="АВТОРИЗАЦИЯ"
                 TextColor="White"
                 VerticalTextAlignment="Center"
+                VerticalOptions="Center"
                 FontFamily="bowler"
                 HeightRequest="50"
-                FontSize="Title"/>
+                FontSize="20"/>
         </VerticalStackLayout>
     </Shell.TitleView>
 
     <VerticalStackLayout Padding="0" Spacing="7" MaximumWidthRequest="200" VerticalOptions="Center">
-        <Image 
-           Source="greenbox.png" VerticalOptions="Start"
-           HeightRequest="50" AnchorY="-6.75" Scale="1" ScaleY="0.12" ScaleX="15"/>
         <Button
            x:Name="ButtonLogin"
            Text="Вход"

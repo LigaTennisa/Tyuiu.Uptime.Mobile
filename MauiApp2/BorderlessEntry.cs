@@ -10,7 +10,6 @@ namespace MauiApp2
     {
         public BorderlessEntry()
         {
-
         }
     }
 }

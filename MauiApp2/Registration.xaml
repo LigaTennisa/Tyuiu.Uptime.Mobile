@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.Pages.Registration"
-             Title="Registration">
+             Title="Registration"
+             xmlns:local="clr-namespace:MauiApp2">
     <Shell.TitleView>
         <HorizontalStackLayout VerticalOptions="Center">
             <Label
@@ -16,27 +17,38 @@
         </HorizontalStackLayout>
     </Shell.TitleView>
 
-    <VerticalStackLayout MaximumWidthRequest="300" VerticalOptions="Center" Padding="7">
-        <Entry x:Name="Mail" Placeholder = "Введите Email" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
-        <Entry x:Name="Login" Placeholder = "Логин" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
-        <Entry x:Name="oneName" Placeholder = "Имя" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
-        <Entry x:Name="twoName" Placeholder = "Фамилия" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
-        <Entry x:Name="Pass" Placeholder = "Пароль" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
-        <Entry x:Name="PassMore" Placeholder = "Потдверждение пароля" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
-
+    <VerticalStackLayout MaximumWidthRequest="300" VerticalOptions="Center">
+        <Border Margin="0,4" >
+            <local:BorderlessEntry Placeholder = " Имя" FontFamily="Helvetica" 
+                FontSize="16" MaxLength ="20"/>
+        </Border>
+        <Border Margin="0,4" >
+            <local:BorderlessEntry Placeholder = " Фамилия" FontFamily="Helvetica" 
+                FontSize="16" MaxLength ="20"/>
+        </Border>
+        <Border Margin="0,4" >
+            <local:BorderlessEntry x:Name="Mail" Placeholder = " E-mail" FontFamily="Helvetica" 
+                FontSize="16" MaxLength ="20"/>
+        </Border>
+        <Border Margin="0,4" >
+            <local:BorderlessEntry x:Name="Login" Placeholder = " Логин" FontFamily="Helvetica"
+                FontSize="16" MaxLength ="20" />
+        </Border>
+        <Border Margin="0,4" >
+            <local:BorderlessEntry x:Name="Pass" Placeholder = " Пароль" FontFamily="Helvetica"
+                FontSize="16" MaxLength ="20" />
+        </Border>
+        <Border Margin="0,4" >
+            <local:BorderlessEntry x:Name="PassMore" Placeholder = " Потдверждение пароля" FontFamily="Helvetica"
+                FontSize="16" MaxLength ="20" />
+        </Border>
         <Button
        x:Name="CounterB"
-       Text="Регистрация"
+       Text="Продолжить"
        TextColor="Black"
        SemanticProperties.Hint="Log in"
        Clicked="Registred"
-       HorizontalOptions="Fill" BackgroundColor="#EF9944" BorderColor="#000000" BorderWidth="1.5"/>
+       HorizontalOptions="Fill" BackgroundColor="#EF9944" BorderColor="#000000" BorderWidth="1.5" Margin="8" MaximumWidthRequest="250"/>
 
     </VerticalStackLayout>
 

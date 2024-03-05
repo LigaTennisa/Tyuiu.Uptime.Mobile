@@ -13,6 +13,15 @@ namespace MauiApp2
             Routing.RegisterRoute("LogIn", typeof(LogIn));
             Routing.RegisterRoute("Registration", typeof(Registration));
             MainPage = new AppShell();
+
+            Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(BorderlessEntry), (handler, view) =>
+            {
+#if ANDROID
+            handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
+#elif IOS
+                handler.PlatformView.BackgroundColor = UIKit.UIColor.Clear;
+#endif
+            });
         }
     }
 }

@@ -4,38 +4,38 @@
              x:Class="MauiApp2.Menu">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="50,0"
-            Spacing="20">
+        <VerticalStackLayout HorizontalOptions="Center" Spacing="5">
 
             <Image 
             Source="greenbox.png"
             HeightRequest="50" AnchorY="0" Scale="1" ScaleY="0.09" ScaleX="15" Margin="0,0,0,-40"/>
 
-            <Label
-                Text="•	Приветствие и описание сайта.&#10;
-•	Следующая игра и ссылка на сайт с покупкой билетов.&#10;
-•	Быстрый доступ к основным разделам сайта.&#10;
-•	Последние новости и актуальные события в мире тенниса.&#10;
+            <Label VerticalOptions="Center"
+                Text=" •	Приветствие и описание сайта.&#10;
+ •	Следующая игра и ссылка на сайт с покупкой билетов.&#10;
+ •	Быстрый доступ к основным разделам сайта.&#10;
+ •	Последние новости и актуальные события в мире тенниса.&#10;
 "
                 SemanticProperties.HeadingLevel="Level2" FontSize="20" />
+            <HorizontalStackLayout HorizontalOptions="Center">
             <Button 
-                CornerRadius="30"
-                BackgroundColor="#292830" Text="Профиль" Margin="0,0,0,35"
+                CornerRadius="10"
+                BackgroundColor="#292830" Text="Профиль" Margin="5"
                 Clicked="ToAccount">
             </Button>
 
             <Button 
-               CornerRadius="30"
-               BackgroundColor="#292830" Text="Соревнования" Margin="0,0,0,35"
+               CornerRadius="10"
+               BackgroundColor="#292830" Text="Соревнования" Margin="5"
                Clicked="ToTournaments">
             </Button>
 
             <Button 
-               CornerRadius="30"
-               BackgroundColor="#292830" Text="Тренировки" Margin="0,0,0,35"
+               CornerRadius="10"
+               BackgroundColor="#292830" Text="Тренировки" Margin="5"
                Clicked="ToTrainings">
             </Button>
+            </HorizontalStackLayout>
 
         </VerticalStackLayout>
     </ScrollView>

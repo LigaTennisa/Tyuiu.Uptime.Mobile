@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.Pages.LogIn"
-             Title="LogIn">
+             Title="LogIn"
+             xmlns:local="clr-namespace:MauiApp2">
 
     <Shell.TitleView>
         <HorizontalStackLayout VerticalOptions="Center">
@@ -17,19 +18,22 @@
         </HorizontalStackLayout>
     </Shell.TitleView>
 
-    <VerticalStackLayout>
-        <Entry x:Name="gin" Placeholder = "Логин" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
-        <Entry x:Name="Pass" Placeholder = "Пароль" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" IsPassword="True" Margin="0" InputTransparent="False" />
-        <Entry x:Name="Prove" Placeholder = "Проверка" FontFamily="Helvetica"
-            FontSize="22" MaxLength ="20" />
+    <VerticalStackLayout MaximumWidthRequest="300" VerticalOptions="Center">
+        <Border Margin="0,4" >
+            <local:BorderlessEntry x:Name="gin" Placeholder = " Логин" FontFamily="Helvetica"
+            FontSize="16" MaxLength ="20" />
+        </Border>
+        <Border Margin="0,4" >
+            <local:BorderlessEntry x:Name="Pass" Placeholder = " Пароль" FontFamily="Helvetica"
+            FontSize="16" MaxLength ="20" IsPassword="True" Margin="0" InputTransparent="False" />
+        </Border>
+
         <Button
-       x:Name="CounterB"
-       Text="Войти" 
-       TextColor="Black"
-       SemanticProperties.Hint="Log in"
-       Clicked="Logged"
-       HorizontalOptions="Fill" BackgroundColor="#F4A85E"/>
+            x:Name="CounterB"
+            Text="Продолжить" 
+            TextColor="Black"
+            SemanticProperties.Hint="Log in"
+            Clicked="Logged"
+            HorizontalOptions="Fill" BackgroundColor="#EF9944" BorderColor="#000000" BorderWidth="1.5" Margin="8" MaximumWidthRequest="250"/>
     </VerticalStackLayout>
 </ContentPage>
